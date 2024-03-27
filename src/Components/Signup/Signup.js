@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { useNavigate, Link } from 'react-router-dom';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -8,6 +10,7 @@ const Signup = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,6 +40,8 @@ const Signup = () => {
         }
       
         console.log('User has successfully signed up');
+
+        
       
         const crudResponse = await fetch('https://crudcrud.com/api/e81241ec3fe54f19992e2a6d0f85fd7f/users', {
           method: 'POST',
@@ -59,6 +64,7 @@ const Signup = () => {
         console.error('Error during signup:', error);
         setErrorMessage(error.message || 'Signup failed. Please try again later.');
       }
+      
       
   };
   
@@ -104,6 +110,9 @@ const Signup = () => {
               Sign Up
             </Button>
           </Form>
+          <p>
+        Have an account? <Link to="/login">Login</Link>
+      </p>
         </Col>
       </Row>
     </Container>
