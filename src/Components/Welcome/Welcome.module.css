@@ -6,3 +6,12 @@
   
     
   }
+
+.editor{
+  margin-top: 27rem;
+  margin-left: 10rem;
+  font-size: large;
+}
+.sendButton{
+  margin-top: -12rem !important;
+}
