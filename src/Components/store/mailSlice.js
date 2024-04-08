@@ -1,4 +1,3 @@
-
 import { createSlice } from "@reduxjs/toolkit";
 
 const mailSlice = createSlice({
@@ -6,7 +5,7 @@ const mailSlice = createSlice({
   initialState: {
     sendMessageIsOpen: false,
     emails: [],
-    sent: [],
+    sent : [],
   },
 
   reducers: {
@@ -17,9 +16,23 @@ const mailSlice = createSlice({
     closeSendMessage: (state) => {
       state.sendMessageIsOpen = false;
     },
+    setEmails : (state, action) => {
+      state.emails = action.payload
+    },
+    setSentBox : (state, action) => {
+      state.sent = action.payload
+    },
+    markedAsRead : (state, action) => {
+      const email = state.emails.find(email => email.id === action.payload);
+
+      if(email) {
+        email.isRead = true
+      }
+    }
+    
   },
 });
 
-export const { openSendMessage, closeSendMessage } = mailSlice.actions; // Export mailActions
+export const mailActions = mailSlice.actions;
 
 export default mailSlice.reducer;

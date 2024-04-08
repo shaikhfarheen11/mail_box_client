@@ -1,0 +1,50 @@
+.sidebar_options {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar_options svg {
+  color: #666;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar_options h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sidebar_options p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar_options:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.sidebar_options:hover p {
+  opacity: 1;
+}
+
+.sidebar--active {
+  background-color: #3d7caf;
+}
+
+.sidebar--active h4 {
+  color: #333;
+}
+
+.sidebar--active svg {
+  color: #333;
+}

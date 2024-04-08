@@ -1,0 +1,40 @@
+.emaildetails_header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid whitesmoke;
+  }
+  
+  .emaildetails_header h4 {
+    margin: 10px;
+  }
+  
+  .emaildetails_middleheader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .emaildetails_middleheaderleft {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-bottom: 3px solid whitesmoke;
+  }
+  
+  .emaildetails_middleheaderleft h4 {
+    margin-left: 18px;
+  }
+  
+  .emaildetails_middleheader svg {
+    font-size: 10px;
+  }
+  
+  .emaildetails_body {
+    display: flex;
+    margin: 10px;
+  }
+  
+  .emailbody_msg {
+    box-shadow: 0px 0px 5px #ccc;
+    height: 80vh;
+    margin: 10px;
+  }

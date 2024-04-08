@@ -1,0 +1,20 @@
+.quill {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 0 !important;
+    height: 275px;
+  }
+  
+  .quill .ql-toolbar {
+    order: 2;
+     border: 2px solid whitesmoke;
+  }
+  
+  .quill .ql-container {
+    order: 1; 
+    flex-grow: 1;
+    border: 2px solid whitesmoke;
+
+  }
+  

@@ -1,0 +1,21 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.compose__btn {
+    padding: 5px 15px !important;
+    border-radius: 40px !important;
+    box-shadow: 2px 2px 3px #ccc;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    margin-left: 10px !important;
+    max-width: 150px !important;
+    background: linear-gradient(90deg, rgb(242,60,60), rgb(51,51,51)) !important;
+    color: white !important;
+
+}
+
+.compose__btn .MuiSvgIcon-root {
+    color: white !important;
+}
